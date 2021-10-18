@@ -15,7 +15,7 @@ img {
 }
 
 a {
-  cursor: url(images/sharpie_cursor.png), auto;
+  cursor: url(images/sharpie_cursor.png), pointer;
 }
 
 header h1 {
