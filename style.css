@@ -247,7 +247,7 @@ footer {
 }
 
 
-/* Work Page */
+/* WORK PAGE */
 
 #work-sections {
   display: flex;
@@ -312,10 +312,7 @@ footer {
 }
 
 
-
-
-
-/* Contact Page */
+/* CONTACT PAGE */
 
 #contact-form table {
   margin: 4rem auto;
@@ -374,7 +371,7 @@ td.labels {
 }
 
 
-/* About Page */
+/* ABOUT PAGE */
 
 #about {
   display: flex;
@@ -426,34 +423,9 @@ td.labels {
 } */
 /* Rework about section for scaling */
 
+
+
 /* Media Queries */
-
-
-@media screen and (max-width: 1135px) {
-  
-  .header-text h1 {
-    font-size: 5rem;
-  }
-
-  .header-text p {
-    font-size: 1rem;
-  }
-
-  .sean {
-    width: 30%;
-    margin: 2rem 0;
-  }
-
-  /* img.sharpie {
-    bottom: -12%;
-    right: 10%;
-  } */
-
-  .about-info p {
-    font-size: 1.2rem;
-  }
-
-}
 
 
 @media screen and (min-width: 1700px) {
@@ -484,6 +456,33 @@ td.labels {
 
   .contact-info p {
     font-size: 1.5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 1135px) {
+  
+  .header-text h1 {
+    font-size: 5rem;
+  }
+
+  .header-text p {
+    font-size: 1rem;
+  }
+
+  .sean {
+    width: 30%;
+    margin: 2rem 0;
+  }
+
+  /* img.sharpie {
+    bottom: -12%;
+    right: 10%;
+  } */
+
+  .about-info p {
+    font-size: 1.2rem;
   }
 
 }
@@ -608,6 +607,15 @@ td.labels {
     flex: 1;
   }
 
+  #work-sections .overlay-text {
+    width: 150px;
+    height: 150px;
+  }
+  
+  #work-sections .overlay-text h2 {
+    font-size: 1rem;
+  }
+
   .about-info {
     flex: 1.5;
     padding: 0;
@@ -679,5 +687,13 @@ td.labels {
     padding-left: 0;
   }
   
+  #work-sections {
+    flex-direction: column;
+  }
+
+  #work-sections .overlay:hover {
+    opacity: 0;
+  }
+
 }
 
