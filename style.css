@@ -29,6 +29,12 @@ header h1 {
   width: 100%
 }
 
+#current-link a {
+  text-decoration: underline;
+  text-decoration-color: #c46465;
+}
+
+
 /* Navigation Section */
 
 #toggle-menu {
@@ -76,6 +82,7 @@ header h1 {
   border-radius: 50%;
   vertical-align: middle;
 }
+
 
 /* Header Section */
 
@@ -160,6 +167,7 @@ header {
   }
 */
 
+
 /* Images Section */
 
 .image-tiles {
@@ -191,6 +199,7 @@ header {
   height: auto;
 
 }
+
 
 /* Footer Section */
 
@@ -237,12 +246,6 @@ footer {
   display: none;
 }
 
-/* All Pages */
-
-#current-link a {
-  text-decoration: underline;
-  text-decoration-color: #c46465;
-}
 
 /* Work Page */
 
@@ -250,14 +253,64 @@ footer {
   display: flex;
 }
 
-#work-sections a {
+#work-sections .container {
   flex: 1;
-  width: 33%;
 }
 
 #work-sections img {
   width: 100%;
 }
+
+#work-sections .content {
+  position: relative;
+  overflow: hidden;
+}
+
+#work-sections .overlay {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  opacity: 0;
+  transition: 0.75s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .overlay-text {
+  border: solid white 3px;
+  padding: 2rem;
+} */
+
+.overlay-text h2 {
+  font-size: 2.7rem;
+}
+
+.overlay-text p {
+  font-size: 1.2rem;
+  padding-top: 1rem;
+}
+
+#work-sections .overlay:hover {
+  opacity: 1;
+}
+
+.content-image {
+  transform: scale(1);
+  transition: 1s ease;
+}
+
+.content:hover .content-image {
+  transform: scale(1.2);
+}
+
+
+
 
 
 /* Contact Page */
@@ -373,26 +426,66 @@ td.labels {
 
 /* Media Queries */
 
+
 @media screen and (max-width: 1135px) {
   
   .header-text h1 {
     font-size: 5rem;
   }
+
   .header-text p {
     font-size: 1rem;
   }
+
   .sean {
     width: 30%;
     margin: 2rem 0;
   }
+
   /* img.sharpie {
     bottom: -12%;
     right: 10%;
   } */
+
   .about-info p {
     font-size: 1.2rem;
   }
+
 }
+
+
+@media screen and (min-width: 1700px) {
+  
+  .navbar a {
+    font-size: 3rem;
+  }
+
+  .navbar li {
+    width: 250px;
+  }
+
+  .avatar {
+    width: 10rem;
+  }
+
+  header {
+    margin-top: 190px;
+  }
+
+  .header-text h1 {
+    font-size: 10rem;
+  }
+
+  .header-text p {
+    font-size: 1.7rem;
+  }
+
+  .contact-info p {
+    font-size: 1.5rem;
+  }
+
+}
+
 
 @media screen and (max-width: 910px) {
   /* .navbar {
@@ -515,41 +608,16 @@ td.labels {
 
   .about-info {
     flex: 1.5;
+    padding: 0;
+  }
+
+  .about-info p {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
   }
 
 }
 
-@media screen and (min-width: 1700px) {
-  
-  .navbar a {
-    font-size: 3rem;
-  }
-
-  .navbar li {
-    width: 250px;
-  }
-
-  .avatar {
-    width: 10rem;
-  }
-
-  header {
-    margin-top: 190px;
-  }
-
-  .header-text h1 {
-    font-size: 10rem;
-  }
-
-  .header-text p {
-    font-size: 1.7rem;
-  }
-
-  .contact-info p {
-    font-size: 1.5rem;
-  }
-
-}
 
 @media screen and (max-width: 540px) {
 
@@ -589,10 +657,6 @@ td.labels {
     padding: 2rem;
   }
 
-  #contact-form-mobile label {
-  
-  }
-
   #contact-form-mobile input {
     font-size: 1rem;
     padding: 8px;
@@ -604,11 +668,14 @@ td.labels {
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
   .sean {
-    width: 75%;
+    width: 80%;
   }
+
   .sean img {
     padding-left: 0;
   }
+  
 }
 
