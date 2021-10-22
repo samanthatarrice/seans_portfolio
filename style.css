@@ -338,16 +338,16 @@ footer {
 	width: 100%;
 }
 
-.sp-text {
-	padding: 0 4rem;
+.sp-text, .book-description {
+	padding: 0 6rem;
 }
 
-.sp-text h2 {
+.sp-text h2,.book-description h2 {
 	padding-bottom: 1.5rem;
 	font-size: 2.5rem;
 }
 
-.sp-text p {
+.sp-text p, .book-description p {
 	line-height: 2;
 	font-size: 1.25rem;
 }
@@ -356,6 +356,19 @@ footer {
 	text-align: right;
 }
 
+.book {
+	width: 100%;
+	border: solid black 2rem;
+}
+
+.book-cover {
+	display: flex;
+	align-items: center;
+}
+
+.book-cover img {
+	width: 50%;
+}
 
 /* CONTACT PAGE */
 
