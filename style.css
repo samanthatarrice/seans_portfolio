@@ -321,7 +321,41 @@ footer {
 .biking-vid {
 	width: 100%;
 	height: auto;
+	vertical-align: bottom;
 }
+
+#senior-projects {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.sp-item {
+	width: 50%;
+}
+
+.sp-item img {
+	width: 100%;
+}
+
+.sp-text {
+	padding: 0 4rem;
+}
+
+.sp-text h2 {
+	padding-bottom: 1.5rem;
+	font-size: 2.5rem;
+}
+
+.sp-text p {
+	line-height: 2;
+	font-size: 1.25rem;
+}
+
+.right-align {
+	text-align: right;
+}
+
 
 /* CONTACT PAGE */
 
