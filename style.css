@@ -318,10 +318,10 @@ footer {
 	font-size: 1.25rem;
 }
 
-.biking-vid {
+video.biking-vid {
 	width: 100%;
-	height: auto;
 	vertical-align: bottom;
+	display: block;
 }
 
 #senior-projects {
@@ -338,18 +338,33 @@ footer {
 	width: 100%;
 }
 
-.sp-text, .book-description {
-	padding: 0 6rem;
+.sp-text {
+	padding: 0 3rem;
 }
 
-.sp-text h2,.book-description h2 {
+.sp-text h2 {
 	padding-bottom: 1.5rem;
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 }
 
 .sp-text p, .book-description p {
 	line-height: 2;
-	font-size: 1.25rem;
+	font-size: 1.15rem;
+}
+
+div.book-description {
+	margin-left: 4rem; 
+	background-color: rgb(227, 231, 231);
+	padding: 1rem;
+}
+
+div.book-description h2 {
+	padding-bottom: 1.5rem;
+	font-size: 1.75rem;
+}
+
+.book-description p {
+	font-size: 1rem;
 }
 
 .right-align {
@@ -357,8 +372,9 @@ footer {
 }
 
 .book {
-	width: 100%;
-	border: solid black 2rem;
+	width: 70%;
+	border: solid black 1rem;
+	margin: 5rem auto;
 }
 
 .book-cover {
@@ -535,6 +551,15 @@ textarea {
 	.about-info p {
 		font-size: 1.2rem;
 	}
+
+	div.book-description h2 {
+		font-size: 1.25rem;
+	}
+
+	div.book-description p {
+		font-size: 0.75rem;
+		line-height: 1.75;
+	}
 }
 
 @media screen and (max-width: 910px) {
@@ -679,7 +704,28 @@ textarea {
 		padding: 1rem 2.5rem;
 		font-size: 1rem;
 	}
+
+	section.book {
+		width: 100%;
+		margin: 0;
+	}
+
+	.sp-text {
+		padding: 1rem;
+	}
+
+	.sp-text h2 {
+		font-size: 1.25rem;
+	}
+
+	.sp-text p {
+		font-size: 0.75rem;
+		line-height: 1.5rem;
+	}
+
 }
+
+
 
 @media screen and (max-width: 540px) {
 	.header-text p {
@@ -745,5 +791,14 @@ textarea {
 
 	#work-sections .overlay:hover {
 		opacity: 0;
+	}
+
+	#senior-projects {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	#senior-projects .sp-item {
+		width: 100%;
 	}
 }
