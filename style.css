@@ -278,8 +278,8 @@ footer {
 
 .overlay-text {
 	border: solid white 2px;
-	width: 250px;
-	height: 250px;
+	width: 45%;
+	height: 45%;
 	border-radius: 50%;
 	display: inline-flex;
 	align-items: center;
@@ -371,6 +371,67 @@ div.book-description h2 {
 .book-description p {
 	font-size: 1rem;
 }
+
+/* code copied from medium.com */
+
+.spur-carousel-wrapper {
+	overflow: hidden;
+}
+
+.spur-carousel {
+	transform-style: preserve-3d;
+}
+
+.spur-photo {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	margin: auto;
+	z-index: 100;
+	transition: transform 0.5s, opacity 0.5s, z-index 0.5s;
+}
+
+.spur-photo.initial, .spur-photo.active {
+	opacity: 1;
+	position: relative;
+	z-index: 900;
+}
+
+.spur-photo.prev, spur-photo.next {
+	z-index: 800;
+}
+
+.spur-photo.prev {
+	transform: translateX(-100%);
+}
+
+.spur-photo.next {
+	transform: translateX(100%);
+}
+
+.spur-button-prev, 
+.spur-button-next {
+	position: absolute;
+	top: 50%;
+	font-size: 3.5rem;
+	color: rgba(0, 0, 0, 0.5);
+	transform: translateY(-50%);
+	cursor: url("images/sharpie.png"), pointer;
+	z-index: 1001;
+}
+
+.spur-button-prev {
+	left: 1rem;
+}
+
+.spur-button-next {
+	right: 1rem;
+}
+/* fix z-indexes...do they need to be so high? */
+
+/* end copied code */
+
 
 .right-align {
 	text-align: right;
@@ -695,13 +756,8 @@ textarea {
 		flex: 1;
 	}
 
-	#work-sections .overlay-text {
-		width: 150px;
-		height: 150px;
-	}
-
-	#work-sections .overlay-text h2 {
-		font-size: 1rem;
+	#work-sections {
+		flex-direction: column;
 	}
 
 	.about-info {
@@ -739,18 +795,17 @@ textarea {
 @media screen and (max-width: 540px) {
 	
 	header h1 {
-		font-size: 3.5rem;
+		font-size: 3.75rem;
 	}
 
 	.sp-header p {
-		font-size: 1.10rem;
+		font-size: 1.50rem;
 		padding: 0 2rem;
 		line-height: 1.5;
 	}
 
 	.header-text p {
 		line-height: 2;
-		margin: 10;
 	}
 
 	#big-image,
