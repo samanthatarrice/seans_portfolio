@@ -6,3 +6,8 @@ To do:
 - add :focus to contact form
 - add animation to make home image of sean disappear when user scrolls up
 - add image carousels to work pages
+
+
+Resources:
+- https://www.youtube.com/watch?v=r4RQ38EoLds
+- formsubmit.co
