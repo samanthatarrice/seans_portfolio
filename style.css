@@ -23,7 +23,7 @@ header h1 {
 	text-align: center;
 	color: white;
 	font-size: 4.5rem;
-	background-color: black;
+	/* background-color: black; */
 	padding: 0.75rem;
 	margin-bottom: 0;
 	width: 100%;
@@ -76,7 +76,7 @@ header h1 {
 }
 
 .avatar {
-	width: 7rem;
+	width: 6rem;
 	height: auto;
 	border-radius: 50%;
 	vertical-align: middle;
@@ -85,7 +85,7 @@ header h1 {
 /* Header Section */
 
 header {
-	margin-top: 144px;
+	margin-top: 128px;
 }
 
 .header-home {
@@ -105,8 +105,7 @@ header {
 }
 
 .sean-working {
-	flex: 1;
-	width: 50%;
+	flex: 1.06;
 	/* width: 50%;
   height: auto; */
 }
@@ -117,16 +116,16 @@ header {
 }
 
 .header-text h1 {
-	font-size: 8rem;
+	font-size: 6rem;
 	margin: 0;
 	padding-top: 0;
 }
 
 .header-text p {
 	font-family: 'Raleway', sans-serif;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	line-height: 2.5;
-	padding: 0 3rem 1rem 3rem;
+	padding: 0 6rem 1rem 6rem;
 	margin-top: 0;
 }
 
@@ -669,7 +668,7 @@ textarea {
 	#toggle-menu {
 		display: block;
 		width: 100%;
-		height: 112px;
+		height: 100px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -689,7 +688,7 @@ textarea {
 
 	.avatar_mobile {
 		margin-right: 2rem;
-		width: 5rem;
+		width: 4rem;
 		border-radius: 50%;
 	}
 
@@ -702,7 +701,19 @@ textarea {
 	}
 
 	header {
-		margin-top: 112px;
+		margin-top: 100px;
+		
+	}
+
+	header.header-home {
+		background: no-repeat url("/images/sean_working.jpeg");
+		background-size: 100%;
+		background-position: center;
+	}
+
+	.header-text h1 {
+		background-color: none;
+		padding-top: 1rem;
 	}
 
 	.header-home {
@@ -712,10 +723,13 @@ textarea {
 
 	.header-text p {
 		margin-bottom: 0;
+		font-size: 1.2rem;
+		text-shadow: #000 1px 0 10px;
 	}
 
 	.sean-working {
-		width: 100%;
+		/* width: 100%; */
+		display: none;
 	}
 
 	#big-icon {
@@ -794,18 +808,23 @@ textarea {
 
 @media screen and (max-width: 540px) {
 	
-	header h1 {
-		font-size: 3.75rem;
+	.header-text h1 {
+		font-size: 4rem;
 	}
 
 	.sp-header p {
-		font-size: 1.50rem;
+		font-size: 1.5rem;
 		padding: 0 2rem;
 		line-height: 1.5;
 	}
 
+	.header-home {
+		padding-top: 1rem;
+	}
+
 	.header-text p {
 		line-height: 2;
+		padding: 0 1.5rem 1.5rem 1.5rem;
 	}
 
 	#big-image,

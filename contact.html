@@ -35,7 +35,7 @@
     <h1>Contact</h1>
   </header>
 
-  <form id="contact-form" action="mailto:s.tarrice@gmail.com" method="post" enctype="text/plain">
+  <form name="contact" method="POST" data-netlify="true" id="contact-form" action="mailto:s.tarrice@gmail.com" enctype="text/plain">
     <table>
         <tr>
           <td rowspan="5">
@@ -63,13 +63,19 @@
     </table>
   </form>
 
-  <form id="contact-form-mobile" action="mailto:s.tarrice@gmail.com" method="post" enctype="text/plain">
+  <form name="contact" method="POST" data-netlify="true" id="contact-form-mobile" action="mailto:s.tarrice@gmail.com" enctype="text/plain">
     <label for="name">Name:</label>
     <input id="name" type="text" name="name">
     <label for="email">Email:</label>
     <input id="email" type="email" name="email">
     <label for="message">Message:</label>
     <textarea id="message" name="message" placeholder="The first rule is..."></textarea>
+    <tr class="contact-buttons">
+      <td colspan="2">
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </td>
+    </tr>
 
   </form>
 
