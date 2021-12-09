@@ -35,7 +35,9 @@
     <h1>Contact</h1>
   </header>
 
-  <form name="contact" method="POST" data-netlify="true" id="contact-form" action="mailto:s.tarrice@gmail.com" enctype="text/plain">
+  <form action="https://formsubmit.co/s.tarrice@gmail.com" name="contact" method="POST" data-netlify="true" id="contact-form" action="mailto:s.tarrice@gmail.com" enctype="text/plain">
+    <input type="hidden" name="_next" value="https://sean-portfolio.netlify.app/contact.html/thankyou.html">
+    <input type="hidden" name="_subject" value="New email from Portfolio Site!">
     <table>
         <tr>
           <td rowspan="5">
@@ -63,13 +65,15 @@
     </table>
   </form>
 
-  <form name="contact" method="POST" data-netlify="true" id="contact-form-mobile" action="mailto:s.tarrice@gmail.com" enctype="text/plain">
+  <form action="https://formsubmit.co/s.tarrice@gmail.com" data-netlify="true" id="contact-form-mobile" action="mailto:s.tarrice@gmail.com" enctype="text/plain">
+    <input type="hidden" name="_next" value="https://sean-portfolio.netlify.app/contact.html/thankyou.html">
+    <input type="hidden" name="_subject" value="New email from Portfolio Site!">
     <label for="name">Name:</label>
-    <input id="name" type="text" name="name">
+    <input id="name" type="text" name="name" required>
     <label for="email">Email:</label>
-    <input id="email" type="email" name="email">
+    <input id="email" type="email" name="email" required>
     <label for="message">Message:</label>
-    <textarea id="message" name="message" placeholder="The first rule is..."></textarea>
+    <textarea id="message" name="message" placeholder="The first rule is..." required></textarea>
     <tr class="contact-buttons">
       <td colspan="2">
         <input type="submit" value="Send">

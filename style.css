@@ -643,7 +643,7 @@ textarea {
 	.navbar {
 		position: fixed;
 		flex-direction: column;
-		margin-top: 112px;
+		margin-top: 100px;
 		background-color: white;
 		line-height: 1.5;
 		border-top: solid gray 1px;
