@@ -2,6 +2,7 @@
 
 To do:
 - make image file sizes smaller and uniform
-- consolodate css styles into shorthand where applicable
+- consolidate css styles into shorthand where applicable
 - add :focus to contact form
 - add animation to make home image of sean disappear when user scrolls up
+- add image carousels to work pages
