@@ -515,6 +515,17 @@ textarea {
 	display: none;
 }
 
+.thanks-redirect {
+	margin: 6rem auto;
+	text-align: center;
+	font-size: 1.5rem;
+	width: 700px;
+	line-height: 1.5;
+	max-width: 90%;
+}
+
+
+
 /* ABOUT PAGE */
 
 #about {
