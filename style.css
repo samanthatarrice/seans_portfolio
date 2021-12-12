@@ -177,7 +177,7 @@ header {
 	-webkit-flex-direction: row;
 	flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-start;
 		/* This seemed to work the best! */
 }
 
@@ -745,6 +745,7 @@ textarea {
 
 	.header-home {
 		flex-direction: column;
+		-webkit-flex-direction: column;
 		padding-top: 2rem;
 	}
 
@@ -799,6 +800,7 @@ textarea {
 
 	#work-sections {
 		flex-direction: column;
+		-webkit-flex-direction: column;
 	}
 
 	.about-info {
@@ -865,6 +867,7 @@ textarea {
 
 	#contact {
 		flex-direction: column;
+		-webkit-flex-direction: row;
 	}
 
 	.social-media {
