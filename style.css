@@ -114,6 +114,7 @@ header {
 }
 
 .sean-working img {
+	height: 100%;
 	width: 100%;
 	/* vertical-align: bottom; */
 }
@@ -171,19 +172,20 @@ header {
 
 .image-tiles {
 	display: flex;
-	flex-flow: row wrap;
-	/* display: -webkit-box;
-  display: -ms-flexbox;
-	-ms-flex-wrap: wrap; */
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	align-items: center;
+		/* This seemed to work the best! */
 }
 
 .image-tiles img {
 	width: 25%;
 	max-height: 25%;
-	/* vertical-align: bottom; */
-	flex: 1;
-	/* -webkit-box-flex: 1;
-  -ms-flex: 1; */
+	/* flex: 1;
+	-webkit-box-flex: 1; */
 }
 
 #big-image {
@@ -192,9 +194,12 @@ header {
 }
 
 #four-squares {
-	display: inline-flex;
-	flex-flow: row wrap;
-	/* vertical-align: bottom; */
+	display: flex;
+	display: -webkit-box;
+	flex-direction: row;
+	-webkit-flex-direction: row; 
+	flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap;
 	width: 50%;
 	max-height: 50%;
 }
@@ -651,7 +656,7 @@ textarea {
 	}
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 960px) {
 	/* .navbar {
     display: none;
   } */
@@ -712,10 +717,6 @@ textarea {
 		border-radius: 50%;
 	}
 
-	/* .navbar li {
-    font-size: 1.5rem;
-  } */
-
 	.avatar {
 		width: 5rem;
 	}
@@ -726,9 +727,15 @@ textarea {
 	}
 
 	header.header-home {
-		background: no-repeat url("/images/home_images/sean_working.jpeg");
+		background: url("/images/home_images/sean_working.jpeg");
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
 		background-size: 100%;
 		background-position: center;
+		-o-background-size: cover;
+  	-moz-background-size: cover;
+  	-webkit-background-size: cover;
 	}
 
 	.header-text h1 {
@@ -742,7 +749,7 @@ textarea {
 	}
 
 	.header-text p {
-		margin-bottom: 0;
+		margin-bottom: 2vh;
 		font-size: 1.2rem;
 		text-shadow: #000 1px 0 10px;
 	}

@@ -12,3 +12,4 @@ Resources:
 - https://www.youtube.com/watch?v=r4RQ38EoLds
 - formsubmit.co
 - Remove "This form is not secure" warnings: https://www.codegrepper.com/code-examples/html/this+form+is+not+secure.autofill+has+been+turned+off+in+html+input+type
+- Fix issues with Safari: https://stackoverflow.com/questions/57516373/image-stretching-in-flexbox-in-safari
