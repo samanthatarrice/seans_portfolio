@@ -1,5 +1,8 @@
 const menuBars = document.querySelector('.fa-bars');
 const dropDown = document.querySelector('.navbar');
+const headerHome = document.querySelector('.header-home');
+const headerText = document.querySelector('.header-text');
+const seanHome = document.querySelector('.sean-working');
 
 menuBars.addEventListener('click', function () {
   dropDown.classList.toggle('hide');
@@ -8,6 +11,21 @@ menuBars.addEventListener('click', function () {
 
 window.addEventListener('load', function () {
   dropDown.classList.add('hide');
+})
+
+let lastScrollY = window.scrollY;
+window.addEventListener('scroll', () => {
+  if (lastScrollY < window.scrollY) {
+    headerHome.classList.add('header--hidden');
+    seanHome.style.display = 'none';
+    headerText.style.display = 'none';
+
+  } else {
+    headerHome.classList.remove('header--hidden');
+    seanHome.style.display = 'block';
+    headerText.style.display = 'block';
+  }
+  lastScrollY = window.scrollY;
 })
 
 // How do I make the menu go back up when another part of the page is clicked.
