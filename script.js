@@ -28,6 +28,49 @@ window.addEventListener('scroll', () => {
   lastScrollY = window.scrollY;
 })
 
+
+// Books
+
+var right = document.getElementsByClassName("right");
+    var si = right.length;
+    var z=1;
+    turnRight();
+    function turnRight()
+    {
+        if(si>=1){
+            si--;
+        }
+        else{
+            si=right.length-1;
+            function sttmot(i){
+                setTimeout(function(){right[i].style.zIndex="auto";},300);
+            }
+            for(var i=0;i<right.length;i++){
+                right[i].className="right";
+                sttmot(i);
+                z=1;
+            }
+        }
+        right[si].classList.add("flip");
+        z++;
+        right[si].style.zIndex=z;
+    }
+    function turnLeft()
+    {
+        if(si<right.length){
+            si++;
+        }
+        else{
+            si=1;
+            for(var i=right.length-1;i>0;i--){
+                right[i].classList.add("flip");
+                right[i].style.zIndex=right.length+1-i;
+            }
+        }
+        right[si-1].className="right";
+        setTimeout(function(){right[si-1].style.zIndex="auto";},350);
+    }
+
 // How do I make the menu go back up when another part of the page is clicked.
 
 // What's the best way to add js for specific pages? For example, I want to change the navbar to not be fixed on all pages except the home page. Would it be best to just add a new script.js file just for that page? Or, would I be able to add something that targets specific pages?
