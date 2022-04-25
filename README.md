@@ -88,6 +88,11 @@ Once you have either the emulator or Expo Go installed, you can run it on your l
 * [Angela Yu's Complete Web Development Bootcamp](https://www.udemy.com/course/the-complete-web-development-bootcamp/)
 * [Img Shields](https://shields.io)
 * [Best Readme Template](https://github.com/othneildrew/Best-README-Template)
+* https://www.youtube.com/watch?v=r4RQ38EoLds
+* formsubmit.co
+* Remove "This form is not secure" warnings: https://www.codegrepper.com/code-examples/html/this+form+is+not+secure.autofill+has+been+turned+off+in+html+input+type
+* Fix issues with Safari: https://stackoverflow.com/questions/57516373/image-stretching-in-flexbox-in-safari
+* Hide on scroll: https://youtu.be/Q_XZk5Vnujw
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -104,12 +109,3 @@ Made with 💚 by Samantha Tarrice, November 2021 - present
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/starrice/
-
-# seans_portfolio
-
-Resources:
-- https://www.youtube.com/watch?v=r4RQ38EoLds
-- formsubmit.co
-- Remove "This form is not secure" warnings: https://www.codegrepper.com/code-examples/html/this+form+is+not+secure.autofill+has+been+turned+off+in+html+input+type
-- Fix issues with Safari: https://stackoverflow.com/questions/57516373/image-stretching-in-flexbox-in-safari
-- Hide on scroll: https://youtu.be/Q_XZk5Vnujw
