@@ -6,7 +6,7 @@
 <!--   <a href="https://github.com/samanthatarrice/mono_log-journal-app">
     <img src="components/images/logo-gradient.png" alt="Logo" width="200" height="200">
   </a> -->
-  <h1 align="center">Sam's Travel Blog</h1>
+  <h1 align="center">Sean's Graphic Design Portfolio</h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -34,16 +34,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Created based on the mockup from a tutorial by Bob Ziroll on Scrimba. This wasn't a walkthrough tutorial, but a side project you could choose to work on to solidfy concepts learned about passing props in React.
+Created as a graphic designer's portfolio.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
   <div align="center">
-    <img src="https://cdn-icons-png.flaticon.com/512/45/45082.png" width=70 height="70" alt="React icon">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111420.png" width="70" height="70" alt="Git logo">
-    <img src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png" width="70" height="70" alt="Github logo">
+    <img src="https://cdn-icons.flaticon.com/png/512/721/premium/721671.png?token=exp=1650898205~hmac=8ed40cc275ea8f943ca372056fb595ad" width=70 height="70" alt="JS icon">
+    <img src="https://cdn-icons-png.flaticon.com/512/1051/1051328.png" width="70" height="70" alt="HTML logo">
+    <img src="https://cdn-icons-png.flaticon.com/128/732/732007.png" width="70" height="70" alt="CSS logo">
   </div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -57,7 +57,7 @@ Once you have either the emulator or Expo Go installed, you can run it on your l
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/samanthatarrice/travel-journal.git
+   git clone https://github.com/samanthatarrice/seans_portfolio.git
    ```
 2. Install NPM packages
    ```sh
